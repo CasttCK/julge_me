@@ -3,27 +3,34 @@
 {% block content %}
     <div id="main_container">
         <div id="topics">
-            <div id="card">
-                <h1 style="color: white">Bem-vindo à Página Inicial</h1>
-                <p>Outro conteúdo da página inicial aqui...</p>
-            </div>
+            <h1>teste</h1>
+        </div>
+        <div id="card">
+            <h1 style="color: white">Bem-vindo à Página Inicial</h1>
+            <p>Outro conteúdo da página inicial aqui...</p>
         </div>
     </div>
 
     <style>
         #main_container {
-            width: 80%;
-            border-left: 1px solid #202c2c;
-            border-right: 1px solid #202c2c;
-            margin-left: 10%;
-            margin-top: 10px
-        }
-
-        #topics {
             width: 60%;
             border-left: 1px solid #202c2c;
             border-right: 1px solid #202c2c;
             margin-left: 20%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #topics {
+            width: 20%;
+            background-color: white;
+        }
+
+        #card {
+            width: 80%;
+            background-color: grey;
         }
     </style>
 {% endblock %}
